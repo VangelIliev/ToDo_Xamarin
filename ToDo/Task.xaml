@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:generic="clr-namespace:System.Collections.Generic;assembly=netstandard"
+             xmlns:toDo="clr-namespace:ToDo;assembly=ToDo"
+             mc:Ignorable="d"
+             x:Class="ToDo.Task"
+             BackgroundImageSource="ToDoPage.jpg"
+             
+             Padding="0,20,0,0"
+             Opacity="0.8">
+    <ContentPage.BindingContext>
+        <toDo:Data>
+
+        </toDo:Data>
+    </ContentPage.BindingContext>
+    <StackLayout Padding="10">
+            <Entry Placeholder="Enter header" TextColor="White" PlaceholderColor="White" x:Name="Entry" ></Entry>
+            <Entry Placeholder="Enter detail" TextColor="White" PlaceholderColor="White" x:Name="Detail"></Entry>
+            <Button TextColor="White" BackgroundColor="CornflowerBlue" CornerRadius="20" Clicked="Button_OnAdd" Text="add"></Button>
+        
+            
+            <ListView x:Name="ListView" HasUnevenRows="True" ItemSelected="ListView_OnItemSelected" >
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout>
+                                    <Label Text="{Binding Header}" TextColor="CornflowerBlue" FontSize="20"></Label >
+                                    <Label Text="{Binding Detail}" TextColor="CornflowerBlue" FontSize="20"></Label>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Button BackgroundColor="CornflowerBlue" WidthRequest="150" TextColor="White" CornerRadius="20" Text="Remove" HorizontalOptions="StartAndExpand" Clicked="Button_OnRemove"></Button>
+                                        <Button BackgroundColor="CornflowerBlue" WidthRequest="150" TextColor="White" CornerRadius="20" Text="Update" HorizontalOptions="EndAndExpand" Clicked="Button_OnUpdate"></Button>
+                            </StackLayout>
+                                    
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+
+                    </ListView.ItemTemplate>
+                    
+                </ListView>
+                
+            
+                <Button Text="LogOut" CornerRadius="20" BackgroundColor="CornflowerBlue" TextColor="White"  Clicked="Button_OnLogOut"></Button>
+                    
+        
+                
+            
+         
+            
+        </StackLayout>
+
+</ContentPage>

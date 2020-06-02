@@ -1,0 +1,17 @@
+C:\Users\veno1\source\repos\ToDo\ToDo\ToDo\bin\Debug\netstandard2.0\ToDo.deps.json
+C:\Users\veno1\source\repos\ToDo\ToDo\ToDo\bin\Debug\netstandard2.0\ToDo.dll
+C:\Users\veno1\source\repos\ToDo\ToDo\ToDo\bin\Debug\netstandard2.0\ref\ToDo.dll
+C:\Users\veno1\source\repos\ToDo\ToDo\ToDo\bin\Debug\netstandard2.0\ToDo.pdb
+C:\Users\veno1\source\repos\ToDo\ToDo\ToDo\obj\Debug\netstandard2.0\ToDo.csprojAssemblyReference.cache
+C:\Users\veno1\source\repos\ToDo\ToDo\ToDo\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\veno1\source\repos\ToDo\ToDo\ToDo\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\veno1\source\repos\ToDo\ToDo\ToDo\obj\Debug\netstandard2.0\ToDo.AssemblyInfoInputs.cache
+C:\Users\veno1\source\repos\ToDo\ToDo\ToDo\obj\Debug\netstandard2.0\ToDo.AssemblyInfo.cs
+C:\Users\veno1\source\repos\ToDo\ToDo\ToDo\obj\Debug\netstandard2.0\ToDo.dll
+C:\Users\veno1\source\repos\ToDo\ToDo\ToDo\obj\Debug\netstandard2.0\ref\ToDo.dll
+C:\Users\veno1\source\repos\ToDo\ToDo\ToDo\obj\Debug\netstandard2.0\ToDo.pdb
+C:\Users\veno1\source\repos\ToDo\ToDo\ToDo\obj\Debug\netstandard2.0\Register.xaml.g.cs
+C:\Users\veno1\source\repos\ToDo\ToDo\ToDo\obj\Debug\netstandard2.0\Task.xaml.g.cs
+C:\Users\veno1\source\repos\ToDo\ToDo\ToDo\obj\Debug\netstandard2.0\ToDo.csproj.CoreCompileInputs.cache
+C:\Users\veno1\source\repos\ToDo\ToDo\ToDo\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\veno1\source\repos\ToDo\ToDo\ToDo\obj\Debug\netstandard2.0\UpdatePage.xaml.g.cs

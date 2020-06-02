@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             
+             mc:Ignorable="d"
+             x:Class="ToDo.MainPage"
+             BackgroundImageSource="firstPage.jpg"
+             Opacity="0.7">
+            
+    <StackLayout>
+        
+        <Image Source="Logo.png" HorizontalOptions="Center"></Image>
+        <StackLayout HorizontalOptions="Center" WidthRequest="300" >
+
+            <Entry x:Name="UsernameLogin"  Placeholder="Username" PlaceholderColor="White"
+                    TextColor="White" WidthRequest="20" 
+                    MaxLength="15"></Entry>
+            <Entry x:Name="PasswordLogin"  IsPassword ="True" Placeholder="Password" 
+                    PlaceholderColor="White" TextColor="White"  
+                    HorizontalTextAlignment="Start" MaxLength="15"></Entry>
+            <Button Text="Sign in" TextColor="WhiteSmoke"  HorizontalOptions="Center" 
+                    BackgroundColor="CornflowerBlue" WidthRequest="240" 
+                    Margin="30" CornerRadius="10" FontSize="16" x:Name="ButtonLogin" Clicked="Button_OnClicked" ></Button>
+
+        </StackLayout>
+
+        <Grid HorizontalOptions="Center">
+
+            <Label TextColor="White" HorizontalOptions="Center" 
+                   Grid.Row="0" Grid.Column="0" Padding="0,0,100,0" 
+                   FontSize="17">Don't have an account?</Label>
+            <Label TextColor="Chartreuse" Grid.Row="0" Grid.Column="0" 
+                   HorizontalOptions="EndAndExpand" Padding="0,0,115,0" FontSize="17" x:Name="Label" >
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer
+                        Tapped="TapGestureRecognizer_OnTapped"
+                        ></TapGestureRecognizer>
+                </Label.GestureRecognizers>Sign in</Label>
+        </Grid>
+    </StackLayout>
+
+</ContentPage>

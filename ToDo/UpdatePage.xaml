@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:toDo="clr-namespace:ToDo;assembly=ToDo"
+             mc:Ignorable="d"
+             x:Class="ToDo.UpdatePage">
+    <ContentPage.BindingContext>
+        <toDo:Data>
+
+        </toDo:Data>
+    </ContentPage.BindingContext>
+
+    <StackLayout Orientation="Vertical" Padding="20">
+        <Entry x:Name="Entry" Text="{Binding Header}" Placeholder="Insert updated head" PlaceholderColor="Blue" ></Entry>
+            <Entry x:Name="Detail" Text="{Binding Detail}" Placeholder="Insert updated body" PlaceholderColor="Blue" ></Entry>
+            <Button Text="Update" BackgroundColor="CornflowerBlue" TextColor="White" HorizontalOptions="CenterAndExpand" Clicked="Button_OnClicked"></Button>
+
+        </StackLayout>
+   
+</ContentPage>

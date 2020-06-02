@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ToDo.Page1"
+             BackgroundImageSource="secondPage.jpg"
+             Opacity="0.7">
+    
+        <StackLayout>
+
+            <Image Source="Logo.png" HorizontalOptions="Center"></Image>
+            <StackLayout HorizontalOptions="Center" WidthRequest="300" >
+
+            
+                <Entry x:Name="UsernameRegister"  Placeholder="Username" PlaceholderColor="CornflowerBlue"
+                        TextColor="CornflowerBlue"  WidthRequest="20" 
+                        MaxLength="15" FontSize="20"></Entry>
+                <Entry x:Name="PasswordRegister" Placeholder="Password" PlaceholderColor="CornflowerBlue"
+                       TextColor="CornflowerBlue" WidthRequest="20"
+                       MaxLength="15" FontSize="20" IsPassword="True" ></Entry>
+                <Entry x:Name="RepeatPassword"  IsPassword ="True" Placeholder="Repeat Password" 
+                        PlaceholderColor="CornflowerBlue" TextColor="CornflowerBlue"  
+                        HorizontalTextAlignment="Start" MaxLength="15" FontSize="20"></Entry>
+                <Entry x:Name="EmailRegister" PlaceholderColor="CornflowerBlue" Placeholder="Email"
+                       TextColor="CornflowerBlue" WidthRequest="20"
+                       MaxLength="15" FontSize="20"></Entry>
+                <Button Text="Sign up" TextColor="WhiteSmoke"  HorizontalOptions="Center" 
+                        BackgroundColor="CornflowerBlue" WidthRequest="240" 
+                        Margin="30" CornerRadius="10" FontSize="16" x:Name="ButtonRegister" Clicked="Button_OnClicked" ></Button>
+               
+            </StackLayout>
+        </StackLayout>
+</ContentPage>
