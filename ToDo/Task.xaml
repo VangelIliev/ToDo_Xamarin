@@ -20,20 +20,15 @@
             <Entry Placeholder="Enter header" TextColor="White" PlaceholderColor="White" x:Name="Entry" ></Entry>
             <Entry Placeholder="Enter detail" TextColor="White" PlaceholderColor="White" x:Name="Detail"></Entry>
             <Button TextColor="White" BackgroundColor="CornflowerBlue" CornerRadius="20" Clicked="Button_OnAdd" Text="add"></Button>
-        
-            
-            <ListView x:Name="ListView" HasUnevenRows="True" ItemSelected="ListView_OnItemSelected" >
+
+
+        <ListView  x:Name="ListView" HasUnevenRows="True"  >
                     <ListView.ItemTemplate>
-                        <DataTemplate>
+                        <DataTemplate >
                             <ViewCell>
                                 <StackLayout>
                                     <Label Text="{Binding Header}" TextColor="CornflowerBlue" FontSize="20"></Label >
                                     <Label Text="{Binding Detail}" TextColor="CornflowerBlue" FontSize="20"></Label>
-                                    <StackLayout Orientation="Horizontal">
-                                        <Button BackgroundColor="CornflowerBlue" WidthRequest="150" TextColor="White" CornerRadius="20" Text="Remove" HorizontalOptions="StartAndExpand" Clicked="Button_OnRemove"></Button>
-                                        <Button BackgroundColor="CornflowerBlue" WidthRequest="150" TextColor="White" CornerRadius="20" Text="Update" HorizontalOptions="EndAndExpand" Clicked="Button_OnUpdate"></Button>
-                            </StackLayout>
-                                    
                                 </StackLayout>
                             </ViewCell>
                         </DataTemplate>
@@ -41,9 +36,13 @@
                     </ListView.ItemTemplate>
                     
                 </ListView>
-                
-            
-                <Button Text="LogOut" CornerRadius="20" BackgroundColor="CornflowerBlue" TextColor="White"  Clicked="Button_OnLogOut"></Button>
+        <StackLayout Orientation="Horizontal">
+            <Button BackgroundColor="CornflowerBlue" WidthRequest="130" TextColor="White" CornerRadius="20" Text="Remove" HorizontalOptions="StartAndExpand" Clicked="Button_OnRemove" x:Name="Button"></Button>
+            <Button Text="LogOut" CornerRadius="20" WidthRequest="100" BackgroundColor="CornflowerBlue" TextColor="White"  Clicked="Button_OnLogOut"></Button>
+            <Button BackgroundColor="CornflowerBlue" WidthRequest="130" TextColor="White" CornerRadius="20" Text="Update" HorizontalOptions="EndAndExpand" Clicked="Update_OnClicked" x:Name="Update"></Button>
+        </StackLayout>
+
+        
                     
         
                 

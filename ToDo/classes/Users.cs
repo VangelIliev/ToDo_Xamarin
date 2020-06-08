@@ -16,15 +16,7 @@ namespace ToDo
 
         public string Email { get; set; }
 
-        public string GetUsername()
-        {
-            return Username;
-        }
-
-        public string GetPassword()
-        {
-            return Password;
-        }
+   
 
         
     }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "FzB37fUkSo/uXP0/nX1ZHeaVpV+en4QS0Azaw8MXGj/00cG1/pDED/4bWrdl6xolHca6rCZggGhGuQvBIAFhSQ==",
+  "dgSpecHash": "Rh+w3OAC7Ce1ct6bRUkN5Nol2t0EiqPapoz09bAOWrV+O3te6MCiV/z22lWgcuIv5tso55hE8W9J+tBcpFX1Kg==",
   "success": true,
   "projectFilePath": "C:\\Users\\veno1\\source\\repos\\ToDo\\ToDo\\ToDo.iOS\\ToDo.iOS.csproj",
   "expectedPackageFiles": [
@@ -34,7 +34,7 @@
       "code": "NU1605",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Detected package downgrade: Xamarin.Forms from 4.6.0.800 to 4.4.0.991265. Reference the package directly from the project to select a different version. \r\n ToDo.iOS -> ToDo -> Xamarin.Forms (>= 4.6.0.800) \r\n ToDo.iOS -> Xamarin.Forms (>= 4.4.0.991265)",
+      "message": "Detected package downgrade: Xamarin.Forms from 4.6.0.847 to 4.4.0.991265. Reference the package directly from the project to select a different version. \r\n ToDo.iOS -> ToDo -> Xamarin.Forms (>= 4.6.0.847) \r\n ToDo.iOS -> Xamarin.Forms (>= 4.4.0.991265)",
       "libraryId": "Xamarin.Forms",
       "targetGraphs": [
         "Xamarin.iOS,Version=v1.0",

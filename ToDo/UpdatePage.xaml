@@ -5,7 +5,8 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:toDo="clr-namespace:ToDo;assembly=ToDo"
              mc:Ignorable="d"
-             x:Class="ToDo.UpdatePage">
+             x:Class="ToDo.UpdatePage"
+             BackgroundImageSource ="update.jpg">
     <ContentPage.BindingContext>
         <toDo:Data>
 

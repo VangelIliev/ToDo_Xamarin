@@ -15,27 +15,21 @@ namespace ToDo
     {
         
         
-        int currentIndex; 
-        ObservableCollection<Data> update = new ObservableCollection<Data>();
+        
+     
         public UpdatePage(Data data)
         {
-            update = data.Datas;
             InitializeComponent();
-            Entry.Text = data.Header;
-            Detail.Text = data.Detail;
-            currentIndex = data.Index;
-
         }
 
-        Data data = new Data();
+         Data data = new Data();
+         
         async private void Button_OnClicked(object sender, EventArgs e)
         {
-         
-            update.RemoveAt(currentIndex - 1);
             data.Header = Entry.Text;
-            data.Detail = Detail.Text;
-            update.Insert(currentIndex - 1,data);
-            data.Datas = update;
+            data.Detail = Detail.Text; 
+            Task.Datas.Insert(Task.Datas.Count - 1,data);
+            Task.Datas.RemoveAt(Task.Datas.Count - 1);
             await Navigation.PopAsync();
         }
     }

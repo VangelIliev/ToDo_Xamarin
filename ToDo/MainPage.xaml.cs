@@ -13,7 +13,8 @@ namespace ToDo
     [DesignTimeVisible(false)]
     public partial class MainPage : ContentPage
     {
-        
+        private Database usersDatabase = App.Database;
+
         public MainPage()
         {
             InitializeComponent();
@@ -29,20 +30,31 @@ namespace ToDo
         
          private async void Button_OnClicked(object sender, EventArgs e)
          {
+             List<Users> users = usersDatabase.GetPeopleAsync().Result;
+
+             string username = UsernameLogin.Text;
+             string password = PasswordLogin.Text;
              
-            string username = UsernameLogin.Text;
-            string password = PasswordLogin.Text;
+
+            
 
              if (username != null && password != null)
              {
-                 await Navigation.PushAsync(new Task());
+                foreach (var user in users) 
+                {
+                    if (username.Equals(user.Username) && password.Equals(user.Password))
+                    {
+                        await Navigation.PushAsync(new Task());
+                    }
+                }
+                
                  UsernameLogin.Text = "";
                  PasswordLogin.Text = "";
              }
              else
              {
                  
-                 DisplayAlert("Alert", "Username and Password cannot be empty", "OK");
+                 await DisplayAlert("Alert", "Username and Password cannot be empty", "OK");
              }
             
          }

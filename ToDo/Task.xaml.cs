@@ -29,29 +29,19 @@ namespace ToDo
             return true;
         }
 
-         Data data = new Data();
-         private int index = 0;
         private void Button_OnAdd(object sender, EventArgs e)
         {
-            
-            string header = Entry.Text;
-            string detail = Detail.Text;
-            
+            Data toAdd = new Data();
+            toAdd.Header = Entry.Text;
+            toAdd.Detail = Detail.Text;
 
-            data.Header = header;
-            data.Detail = detail;
-            
-            if (header != null && detail != null)
+            if (toAdd.Header != null && toAdd.Detail != null)
             {
-                data.Datas.Add(data);
+                Datas.Add(toAdd);
                 Entry.Text = "";
                 Detail.Text = "";
-                data.Index++;
+                ListView.ItemsSource = Datas;
             }
-
-            ListView.ItemsSource = data.Datas;
-
-
         }
 
         async private void Button_OnLogOut(object sender, EventArgs e)
@@ -62,8 +52,7 @@ namespace ToDo
                 "Stay");
               if (action)
               {
-                // problem to solve Clear username and password when loggout
-                await Navigation.PopAsync();
+                  await Navigation.PopAsync();
               }
                 
         }
@@ -71,24 +60,33 @@ namespace ToDo
 
         private void Button_OnRemove(object sender, EventArgs e)
         {
-            data.Datas.Remove(data);
-
+            if (Datas.Count != 0)
+            {
+                Datas.RemoveAt(Datas.Count - 1);
+            }
         }
-
-         async private void Button_OnUpdate(object sender, EventArgs e)
-        {
-           
-            
-            ListView.ItemsSource = data.Datas;
-            await Navigation.PushAsync(new UpdatePage(data));
-        }
-
         
-      
-
-         private void ListView_OnItemSelected(object sender, SelectedItemChangedEventArgs e)
+        async private void Update_OnClicked(object sender, EventArgs e)
          {
-            var indexOf = data.Datas.IndexOf(e.SelectedItem as Data);
+             if (Datas.Count > 0)
+             {
+                await Navigation.PushAsync(new UpdatePage(Datas[Datas.Count - 1]));
+            }
+             
          }
+
+        private static ObservableCollection<Data> datas;
+        public static ObservableCollection<Data> Datas 
+        {
+            get
+            {
+                return datas ?? (datas = new ObservableCollection<Data>());
+            }
+            set
+            {
+
+            }
+
+        }
     }
 }

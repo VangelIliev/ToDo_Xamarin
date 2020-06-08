@@ -4581,7 +4581,8 @@ public final class R {
     public static final int todopage=0x7f070079;
     public static final int tooltip_frame_dark=0x7f07007a;
     public static final int tooltip_frame_light=0x7f07007b;
-    public static final int user=0x7f07007c;
+    public static final int update=0x7f07007c;
+    public static final int user=0x7f07007d;
   }
   public static final class id {
     public static final int ALT=0x7f080000;

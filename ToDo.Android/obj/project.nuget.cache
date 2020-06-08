@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "O2mdAr9m9A94GRgzXC6aGkA+oY1d4oD0PpseptKaB7di5fMeibShXQv1YukTQSsYT9vq/b29bs+2ppvPuLS0Kg==",
+  "dgSpecHash": "EtgAQVFc4sixb6630y8clJkVwL+CIKrIYIR6ugnubr5BUbL52anWHjeEALgnu3pj/97DI/zvOpdXWt/i8eDTpA==",
   "success": true,
   "projectFilePath": "C:\\Users\\veno1\\source\\repos\\ToDo\\ToDo\\ToDo.Android\\ToDo.Android.csproj",
   "expectedPackageFiles": [
@@ -69,7 +69,7 @@
       "code": "NU1605",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Detected package downgrade: Xamarin.Forms from 4.6.0.800 to 4.4.0.991265. Reference the package directly from the project to select a different version. \r\n ToDo.Android -> ToDo -> Xamarin.Forms (>= 4.6.0.800) \r\n ToDo.Android -> Xamarin.Forms (>= 4.4.0.991265)",
+      "message": "Detected package downgrade: Xamarin.Forms from 4.6.0.847 to 4.4.0.991265. Reference the package directly from the project to select a different version. \r\n ToDo.Android -> ToDo -> Xamarin.Forms (>= 4.6.0.847) \r\n ToDo.Android -> Xamarin.Forms (>= 4.4.0.991265)",
       "libraryId": "Xamarin.Forms",
       "targetGraphs": [
         "MonoAndroid,Version=v9.0"

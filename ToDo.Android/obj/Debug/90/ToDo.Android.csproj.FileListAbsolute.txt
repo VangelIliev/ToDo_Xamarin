@@ -494,3 +494,4 @@ C:\Users\veno1\source\repos\ToDo\ToDo\ToDo.Android\obj\Debug\90\android\assets\R
 C:\Users\veno1\source\repos\ToDo\ToDo\ToDo.Android\obj\Debug\90\android\assets\Rg.Plugins.Popup.pdb
 C:\Users\veno1\source\repos\ToDo\ToDo\ToDo.Android\obj\Debug\90\android\src\crc643dd37f507f3d9710\PopupPageRenderer.java
 C:\Users\veno1\source\repos\ToDo\ToDo\ToDo.Android\obj\Debug\90\android\src\crc64fdbeeba101bd56dc\RgGestureDetectorListener.java
+C:\Users\veno1\source\repos\ToDo\ToDo\ToDo.Android\obj\Debug\90\res\drawable\update.jpg

@@ -984,7 +984,8 @@ int drawable secondpage 0x7f070078
 int drawable todopage 0x7f070079
 int drawable tooltip_frame_dark 0x7f07007a
 int drawable tooltip_frame_light 0x7f07007b
-int drawable user 0x7f07007c
+int drawable update 0x7f07007c
+int drawable user 0x7f07007d
 int id ALT 0x7f080000
 int id CTRL 0x7f080001
 int id FUNCTION 0x7f080002
